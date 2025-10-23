@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Planck-Cell Electromagnetics"
+abstract: >
+  Derives electromagnetic coupling as a fractional capacity share of the
+  universal tick throughput within the discrete S/t framework.
+  Defines the fine-structure constant α = Q_EM / Q_max and the suppression
+  law r(λ) ≲ A(ξ_g/λ)^p. Shows that long-wavelength limits recover constant
+  vacuum impedance, null photon mass, and absence of dispersion.
+  Repository contains the release PDF and LaTeX source.
+
+authors:
+  - family-names: "Langstaff"
+    given-names: "Christopher Michael"
+
+version: "v2.0.2"
+date-released: "2025-10-22"
+repository-code: "https://github.com/langstaffchristopherm-ops/Planck-Cell_Electromagnetics"
+url: "https://github.com/langstaffchristopherm-ops/Planck-Cell_Electromagnetics"
+license: "CC-BY-4.0"
+
+# VERSION DOI (this release)
+doi: "10.5281/zenodo.17421580"
+
+# CONCEPT DOI (stable root)
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.17217107"
+
+preferred-citation:
+  type: article
+  title: "Planck-Cell Electromagnetics"
+  authors:
+    - family-names: "Langstaff"
+      given-names: "C."
+  year: 2025
+  doi: "10.5281/zenodo.17421580"
+  url: "https://doi.org/10.5281/zenodo.17421580"
+  journal: "Zenodo"
