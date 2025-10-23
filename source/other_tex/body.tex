@@ -1,0 +1,202 @@
+% ===== Document body: Electromagnetics chapter =====
+
+\section*{Electromagnetic Capacity and the Fine-Structure Constant \texorpdfstring{$\alpha$}{alpha}}
+
+At leading order the coupling runs as $\frac{d\alpha}{d\ln\mu}\approx \frac{2}{3\pi}\alpha^2$, so the effective capacity fraction grows mildly with energy.
+
+
+We frame the electromagnetic (EM) interaction as a fractional use of a universal stitch capacity,
+\(\mathcal Q_{\max}=\hbar c\). In this view, the fine-structure constant \(\alpha\) is the EM share of that capacity,
+tying together metrological identities and atomic spectroscopy.
+
+\subsection*{Stitch--Capacity View of Charge and \texorpdfstring{$\alpha$}{alpha}}
+
+\paragraph{Reference throughput (identity).}
+Each stitch admits a natural reference capacity
+\begin{equation}
+\mathcal Q_{\max}=\hbar c.
+\end{equation}
+SI identities link the constants by
+\begin{equation}
+e^2 \;=\; 4\pi\epsilon_0\,\alpha\,\hbar c,
+\end{equation}
+so given \((e,\hbar,c)\) and a measured \(\alpha\), \(\epsilon_0\) follows consistently \cite{bipm2019si,tiesinga2021codata}.
+Equivalently, match a vacuum ratio to a matter normalization:
+\begin{equation}
+\alpha \;=\; \frac{e^2}{4\pi\epsilon_0\hbar c}
+\;=\; \frac{Z_0}{2 R_K},
+\qquad
+Z_0=\mu_0 c,\quad R_K=\frac{h}{e^2}.
+\end{equation}
+
+\paragraph{Fractional use (capacity partition).}
+The EM channel occupies a fraction \(\alpha\) of \(\mathcal Q_{\max}\):
+\begin{equation}
+\alpha \;=\; \frac{\mathcal Q_{\rm EM}}{\mathcal Q_{\max}}, \qquad
+0\le \alpha(\mu)\le 1,\qquad \sum_c \alpha_c(\mu)\le 1,
+\end{equation}
+with mild scale dependence \(\alpha(\mu)\) (``running'').
+
+\paragraph{Elementary charge (packet).}
+Solving the SI identity yields
+\begin{equation}
+e \;=\; \sqrt{4\pi\epsilon_0\,\alpha\,\hbar c},
+\end{equation}
+so the observed charge quantum corresponds to one minimal packet of the EM channel's fractional throughput
+(with \(e\) exact in the modern SI; \(\alpha\) determined from experiment) \cite{bipm2019si,tiesinga2021codata}.
+
+\paragraph{Bias-field link (Coulomb).}
+For a point proton at the origin, the scalar potential and field are
+\begin{equation}
+\varphi(r)=\frac{k_C\,e}{r},\qquad k_C=\frac{1}{4\pi\epsilon_0},\qquad
+\mathbf E=-\nabla\varphi.
+\end{equation}
+The electron’s potential energy in this field is
+\begin{equation}
+U(r)=-\,e\,\varphi(r)=-\frac{k_C\,e^2}{r},
+\end{equation}
+which yields the attractive force \(\mathbf F=-\nabla U=-\,e\,\mathbf E\).
+This is the U(1) instance of a conservative-bias template \cite{coulomb1785,griffiths2013electrodynamics}.
+
+\paragraph{Microcell heuristic (operational, testable).}
+Near-isotropic adjacency suggests coarse angular addressability into \(N\) microcells per tick.
+If a U(1) on/off event occupies exactly one cell with probability
+\begin{equation}
+p_{\rm on} \;=\; \frac{1}{N},
+\end{equation}
+the \emph{capacity fraction} identification becomes
+\begin{equation}
+\alpha \;\approx\; \frac{1}{N}, \qquad N\;=\;\alpha^{-1}.
+\end{equation}
+At low energy, \(\alpha^{-1}\!\approx\!137.036 \Rightarrow N\!\approx\!137\).
+As the scale \(\mu\) increases, \(\alpha\) grows slowly and the effective \(N\) decreases (running).
+\emph{Falsifier:} cross-platform determinations of \(\alpha\) at the same \(\mu\) (recoil, QED \(g\!-\!2\), quantum Hall)
+that imply inconsistent \(N\).
+
+\paragraph{Phase-toggle version (natural units).}
+Equivalently, let the minimal U(1) phase increment be \(\delta\phi\) (gauge coupling \(g=\delta\phi\) in \(\hbar=c=1\)).
+Then
+\begin{equation}
+\alpha \;=\; \frac{g^2}{4\pi} \;=\; \frac{(\delta\phi)^2}{4\pi}
+\quad\Rightarrow\quad
+\delta\phi \;=\; \sqrt{\frac{4\pi}{N}} \;\approx\; 0.303~\text{rad}\ \ (\sim 17^\circ)\ \text{for } N\!\approx\!137.
+\end{equation}
+
+\paragraph{SI anchor (metrological status).}
+Since 2019, \(e\) and \(h\) are exact SI defining constants; \(c\) is exact; \(\alpha\) is measured.
+The relation \(e^2=4\pi\epsilon_0\alpha\hbar c\) then ties \(\epsilon_0\) and \(\mu_0\) through \(c^{-2}=\mu_0\epsilon_0\) and
+\(Z_0=\mu_0 c\) \cite{bipm2019si,tiesinga2021codata}.
+Experimentally, \(Z_0\) is read from free-space wave ratios and \(R_K\) from the quantum Hall effect,
+so \(\alpha=Z_0/(2R_K)\) is overconstrained.
+Numerically, \(Z_0 \approx 376.730~\Omega\) and \(R_K \approx 25{,}812.807~\Omega\),
+giving \(\alpha \approx Z_0/(2R_K)\approx 1/137.036\).
+
+\subsection*{Hydrogen: \texorpdfstring{$\alpha$}{alpha} in Action (Rydberg, Lines, Speeds)}
+
+\paragraph{Reduced mass and levels.}
+For hydrogen use
+\begin{equation}
+\mu \;=\; \frac{m_e m_p}{m_e+m_p} \;\approx\; m_e\,(1-5.4\times 10^{-4}),
+\end{equation}
+with bound-state energies and constants
+\begin{equation}
+E_n \;=\; -\,\frac{\mu c^2 \alpha^2}{2 n^2},\qquad
+R_H \;=\; \frac{\mu c \alpha^2}{2h},\qquad
+R_\infty \;=\; \frac{m_e c \alpha^2}{2h},
+\end{equation}
+and \(R_H=(\mu/m_e)\,R_\infty\) \cite{griffiths2018quantum}.
+
+\paragraph{Bohr speed and length (one-liners).}
+Angular-momentum quantization with Coulomb balance gives
+\begin{equation}
+\frac{v}{c} \;=\; \alpha \quad (n=1), \qquad
+a_0 \;=\; \frac{4\pi\epsilon_0\,\hbar^2}{\mu e^2} \;=\; \frac{\hbar}{\mu c\,\alpha}.
+\end{equation}
+
+\paragraph{Balmer-\(\alpha\) (visible red) and Lyman-\(\alpha\) (UV).}
+\begin{equation}
+\frac{1}{\lambda_{\rm H\alpha}} \;=\; R_H\!\left(\frac{1}{2^2}-\frac{1}{3^2}\right)
+\ \Rightarrow\ \ \lambda_{\rm H\alpha}\approx 656~\mathrm{nm},
+\end{equation}
+\begin{equation}
+\frac{1}{\lambda_{\rm Ly\alpha}} \;=\; R_H\!\left(1-\frac{1}{2^2}\right)=\tfrac{3}{4}R_H
+\ \Rightarrow\ \ \lambda_{\rm Ly\alpha}\approx 121.6~\mathrm{nm},
+\end{equation}
+both directly controlled by \(\alpha\) through \(R_H\) \cite{rydberg1890,fowler1922hydrogen}.
+Using CODATA \(R_\infty\), predicted line positions match spectroscopy within the usual reduced-mass and QED corrections.
+
+\paragraph{Fine structure and QED (foreshadow).}
+Relativistic and spin--orbit corrections split levels by \(\sim \alpha^4 m_e c^2\) (with \(n,j\) dependence),
+while the Lamb shift adds higher-order QED terms; all scale with powers of \(\alpha\) and match precision spectroscopy
+\cite{dirac1930principles,bethe1947lamb,griffiths2018quantum}.
+
+\subsection*{Running and Cross-Checks}
+
+\paragraph{One-loop slope (target).}
+For one light Dirac fermion,
+\begin{equation}
+\frac{d\alpha}{d\ln\mu} \;\approx\; \frac{2}{3\pi}\,\alpha^2.
+\end{equation}
+With multiple light charged fermions,
+\begin{equation}
+\frac{d\alpha}{d\ln\mu} \;\approx\; \frac{2}{3\pi}\!\left(\sum_f Q_f^2\right)\alpha^2 \;+\; \cdots,
+\end{equation}
+and hadronic vacuum polarization matters at low energies.
+
+\paragraph{Consistency tests (falsifiers).}
+\begin{itemize}
+  \item \textbf{Hydrogen metrology:} \(R_H\) from multiple lines vs.\ \(\alpha\) from recoil/QED \(g\!-\!2\)/quantum Hall must agree after reduced-mass and known QED corrections \cite{griffiths2018quantum,tiesinga2021codata}.
+  \item \textbf{Platform concordance:} Disagreement of \(\alpha\) beyond uncertainties falsifies the capacity-fraction identification.
+  \item \textbf{Running check:} \(\alpha(\mu)\) must track the known slope (with thresholds); gross departures would contradict the microcell/running picture.
+\end{itemize}
+
+\subsection*{Interpretation and Theme}
+\begin{itemize}
+  \item \(\alpha\) is the EM share of the universal stitch capacity \(\mathcal Q_{\max}=\hbar c\).
+  \item The ``smallness'' \(\alpha\!\approx\!1/137\) reflects rare activation among \(N\!\approx\!137\) microcells (heuristic, testable).
+  \item The U(1) toggle is a minimal phase \(\delta\phi\!\approx\!0.30\) rad in natural units.
+  \item \(e\) is the quantized packet of this fractional flow in SI.
+  \item Hydrogen's \(v/c=\alpha\), \(a_0\), and lines (Balmer/Lyman, fine structure) are direct readouts of \(\alpha\) \cite{bohr1913constitution,griffiths2018quantum}.
+\end{itemize}
+
+\subsection*{Summary Box}
+\begin{center}
+\setlength{\fboxsep}{8pt}%
+\setlength{\fboxrule}{0.8pt}%
+\fbox{%
+  \begin{minipage}{0.95\linewidth}\small\raggedright
+  \(\alpha = \mathcal Q_{\rm EM}/\mathcal Q_{\max}\), \(\mathcal Q_{\max}=\hbar c\),
+  \(e^2=4\pi\epsilon_0\,\alpha\,\hbar c\)~\cite{bipm2019si,tiesinga2021codata}.\\[4pt]
+  \textbf{Heuristic addressability:} \(N=\alpha^{-1}\approx 137\),
+  \(\delta\phi=\sqrt{4\pi/N}\approx 0.303~\mathrm{rad}\) (\(\hbar=c=1\) here).\\[4pt]
+  \(\varphi(r)=k_C e/r\), \(k_C=1/(4\pi\epsilon_0)\), \(\mathbf E=-\nabla\varphi\),
+  \(U(r)=-e\,\varphi(r)=-k_C e^2/r\)~\cite{coulomb1785,griffiths2013electrodynamics}.\\[4pt]
+  \textbf{Hydrogen:} \(E_n=-\,\mu c^2\alpha^2/(2n^2)\),\;
+  \(R_H=\mu c\alpha^2/(2h)\),\; \(R_\infty=m_e c\alpha^2/(2h)\),\; \(v/c=\alpha\) (\(n=1\)).\\[4pt]
+  \textbf{Lines:} \(\lambda_{\rm H\alpha}\approx 656~\mathrm{nm}\),\;
+  \(\lambda_{\rm Ly\alpha}\approx 121.6~\mathrm{nm}\)~\cite{rydberg1890,fowler1922hydrogen}.\\[4pt]
+  \textbf{Fine structure:} splittings \(\sim \alpha^4 m_e c^2\) (with \(n,j\));\;
+  Lamb/QED corrections~\cite{dirac1930principles,bethe1947lamb}.
+  \end{minipage}%
+}
+\end{center}
+
+%%% PATCH BEGIN: MS-PL-001
+\section*{Clarifications}
+\paragraph{Temporal stiffness formalization}
+Let a local mode satisfy \(\partial_\tau^2\phi=-\omega_0^2\phi\). The dispersion \(\omega^2=c^2\kappa^2+\omega_0^2\) implies \(E^2=(pc)^2+(mc^2)^2\) with \(m=\hbar\omega_0/c^2\).
+\paragraph{Species-local vs universal}
+\(\omega_0\) is species-local. A practical bound: \(|\dot\omega_0/\omega_0|\) constrained by precision clock comparisons.
+\paragraph{Anchors}
+Compton, plasma, and Debye frequencies provide direct \(\omega_0\) readouts (list numeric examples in text).
+%%% PATCH END: MS-PL-001
+
+\paragraph{Units.}
+\begin{description}
+\item[$Z_0$] $\Omega$ \quad \item[$R_K$] $\Omega$
+\item[$\epsilon_0$] F\,m$^{-1}$ \quad \item[$\mu_0$] H\,m$^{-1}$
+\item[$e$] C \quad \item[$\hbar c$ (= $Q_{\max}$)] J\,m
+\end{description}
+
+\paragraph{Conclusion.}
+Electromagnetism reads as a fixed capacity share of the tick medium: $\alpha=Q_{\mathrm{EM}}/Q_{\max}$, cross-tied to metrology by $\alpha=\tfrac{Z_0}{2R_K}$. Hydrogen and spectroscopic scales follow, with mild running at high energy. This sets the stage for cosmology, where global entropy creation drives expansion.
