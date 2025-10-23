@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Planck-Cell Electromagnetics"
+abstract: >
+  Electromagnetic field relations within the Planck-Cell S/t framework:
+  tick-driven phase transport, finite-hop propagation, and coupling between
+  local entropy flux and field energy density.  Demonstrates that Maxwell-like
+  behavior arises naturally from adjacency symmetry.  Repository contains
+  the release PDF and LaTeX source.
+
+authors:
+  - family-names: "Langstaff"
+    given-names: "Christopher Michael"
+
+version: "v2.0.0"
+date-released: "2025-10-22"
+repository-code: "https://github.com/langstaffchristopherm-ops/Planck-Cell-Electromagnetics"
+url: "https://github.com/langstaffchristopherm-ops/Planck-Cell-Electromagnetics"
+license: "CC-BY-4.0"
+
+# VERSION DOI (this release)
+doi: "10.5281/zenodo.17421236"
+
+# CONCEPT DOI (stable root)
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.17217107"
+
+preferred-citation:
+  type: article
+  title: "Planck-Cell Electromagnetics"
+  authors:
+    - family-names: "Langstaff"
+      given-names: "C."
+  year: 2025
+  doi: "10.5281/zenodo.17421236"
+  url: "https://doi.org/10.5281/zenodo.17421236"
+  journal: "Zenodo"
